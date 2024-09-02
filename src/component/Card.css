@@ -1,0 +1,55 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  position: relative;
+
+}
+
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+}
+
+.page-link:hover {
+  background-color: #e9ecef;
+}
+
+.active .page-link {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
